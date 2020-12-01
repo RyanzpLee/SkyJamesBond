@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import './Logo.js'
-import './Table.js'
+import Logo from './Logo.js'
+import Table from './Table.js'
 
 
 function App() {
