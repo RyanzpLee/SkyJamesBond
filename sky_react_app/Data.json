@@ -1,22 +1,51 @@
-'{
-        title: "Dr No",
-        actor: "Sean Connery",
-        startTime: "09:00",
-        endTime: "11:00",
-        description: "A movie called Dr No starring Sean Connery as James Bond"
-    },
-    {
-        title: "Thunderball",
-        actor: "Sean Connery",
-        startTime: "11:00",
-        endtime: "14:00",
-        description: "A movie called Thunderball starring Sean Connery"
-    },
-    {
-        title: "Moonraker",
-        actor: "Roger Moore",
-        startTime: "15:00",
-        endTime: "17:00",
-        description: "A movie called Moonraker starring Roger Moore"
-    }
-}'
+{
+    "Channels" : [
+        {
+            "Sean Connery" : {
+            "id" : 1,
+            "name" : "Sean Connery",
+            "shows" : [
+                {
+                    "id" : 1,
+                    "Title" : "Dr No",
+                    "Description" : "A movie called Dr No starring Sean Connery as James Bond",
+                    "start_time" : 9,
+                    "end_time" : 11
+                },{
+                    "id" : 2,
+                    "Title": "Thunderball",
+                    "Description": "A movie called Dr No starring Sean Connery as James Bond",
+                    "start_time": 11,
+                    "end_time": 12
+                }
+
+            ]}
+        },
+        {
+            "Roger Moore": {
+                "id": 2,
+                "name": "Sean Connery",
+                "shows": [
+                    {
+                        "id" : 1,
+                        "Title": "Dr No",
+                        "Description": "A movie called Dr No starring Sean Connery as James Bond",
+                        "start_time": 15,
+                        "end_time": 17
+                    }
+                ]
+            }
+        },
+        {
+            "Pierce Brosnan": {
+                "id": 3,
+                "name": "Pierce Brosnan",
+                "shows": [
+                    {
+                        
+                    }
+                ]
+            }
+        }
+    ]
+}
