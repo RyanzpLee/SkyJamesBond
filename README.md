@@ -21,3 +21,12 @@ The webapp must also be able to upload and read a data file (JSON?) and then the
 
 ### Low priority
 - [ ] Clicking on a Movie cell will bring up a pop up
+
+
+## Todo 
+
+- [x] Created data file layout
+- [x] Started the Main table component
+- [x] Created the movie cell component
+- [ ] Create form component
+- [ ] Finish the movie cell method
