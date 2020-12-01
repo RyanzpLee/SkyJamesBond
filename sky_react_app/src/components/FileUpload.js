@@ -1,28 +1,19 @@
-import react, { Component } from "react"
+import React, { useRef } from 'react'
 
-class FileUpload extends Component {
+const FileUpload = ({ onFileSelect }) => {
+        const fileInput = useRef(null)
 
-        constructor(){
-            super()
-
+        const handleFileInput = (e) => {
+                // handle validations
+                onFileSelect(e.target.files[0])
         }
 
-        handleOnClick(props) {
-                let file = document.getElementById('selectedFiled').files;
-                console.log(file);
-                if (file.length < 0) {
-                        return false;
-                }
-        }
-
-        render() {
-                return (
-                        <div>
-                                <input type="file" id="selectFiles" value="import"></input>
-                                <button id="import"></button>
-                        </div>
-                );
-        }
+        return (
+                <div>
+                        <input type="file" onChange={handleFileInput} />
+                        <button onClick={e => fileInput.current && fileInput.current.click()} className="btn btn-primary">Import</button>
+                </div>
+        );
 }
 
 export default FileUpload
