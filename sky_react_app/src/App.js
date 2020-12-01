@@ -1,8 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import './Logo.js'
+import './Table.js'
+
 
 function App() {
-  return (<h1>Sky James Bond App...ready to deploy</h1>);
+  return (
+  <div>
+  <Logo />
+  <Table />
+  </div>
+  );
 }
 
 export default App;
