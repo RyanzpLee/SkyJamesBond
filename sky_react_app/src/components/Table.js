@@ -1,40 +1,45 @@
 import react, { Component } from "react"
-import movieData from './Data.json'
-import MovieCell from './components/MovieCell'
+import MovieCell from './MovieCell'
 
-const movieString = JSON.stringify(movieData)
+//import movieData from 'j../Data/Data.json';
 
+const movieData = require('../Data/Data.json')
+console.log(movieData);
+console.log("WORKS?")
 
+// const movieString = JSON.stringify(movieData)
 
 export default class Table extends Component {
     constructor() {
         super()
         this.state = {
-            channels: movieString
+            // channels: movieString
         }
     }
 
-    createMovieCell = name => {
-        <MovieCell 
-            name=""
-        />
-    }
+    // createMovieCell = name => {
+    //     <MovieCell
+    //         name=""
+    //     />
+    // }
 
-    createMovieCells = () => {
-        this.state.channels.map(this.createMovieCell)
-    }
+    // createMovieCells = () => {
+    //     this.state.channels.map(this.createMovieCell)
+    // }
 
     render() {
         // const channelItems = this.state.channels.map()
+        console.log("Testing")
         return (
             <main>
                 <div>
-                    {dataObject}
+                    {this.state.channels}
                 </div>
                 <table>
                     <th>Table goes here</th>
-                </table> 
+                </table>
             </main>
         )
     }
 }
+

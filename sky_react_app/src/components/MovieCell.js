@@ -13,13 +13,10 @@ export default class MovieCell extends Component {
         return (
             <div>
                 <td>
-                    {title}
+                    {this.props.title}
                 </td>
             </div>
         )
     }
-
-
-
 
 }
