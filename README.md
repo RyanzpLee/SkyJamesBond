@@ -14,7 +14,7 @@ The webapp must also be able to upload and read a data file (JSON?) and then the
 ## Requirements
 - [ ] Read the data file, and store the data
 - [ ] Build the dynamic table framework that will automatically add more rows and columns as necessary
-- [ ] Syling of tale
+- [ ] Syling of table
 - [ ] Movie cells must be displayed in the correct channel
 - [ ] Movie cells must begin at the correct start time
 - [ ] Movie cells must end at the correct finish time

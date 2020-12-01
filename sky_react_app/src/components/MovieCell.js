@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
 
-export default class MovieCell extends Component {
+class MovieCell extends Component {
     state = {
         name: this.props.name,
         title: this.props.title,
@@ -11,12 +11,14 @@ export default class MovieCell extends Component {
 
     render() {
         return (
-            <div>
+                
                 <td>
                     {this.props.title}
                 </td>
-            </div>
         )
     }
 
 }
+
+
+export default MovieCell

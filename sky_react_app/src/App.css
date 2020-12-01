@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+table, th, td {
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+tr {
+  background-color: lightblue;
+}
+
+table {
+  border-spacing: 0.5rem;
+  border-collapse: collapse;
+  width: 75%;
+}

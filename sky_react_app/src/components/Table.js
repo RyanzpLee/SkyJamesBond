@@ -47,6 +47,7 @@ export default class Table extends Component {
     renderTableData() {
         return this.state.channels.map((channel, index) => {
             const { id, name, title, startTime, endTime } = channel
+
             return (
                 <tr key={id}>
                     <td> {name}</td>
@@ -58,6 +59,10 @@ export default class Table extends Component {
         })
     }
 
+    renderTableHeader() {
+        minimum = Math.min(this.state.channels => )
+    }
+
 
     render() {
         return (
@@ -66,13 +71,13 @@ export default class Table extends Component {
                     <thead>
                         <tr>
                             <th>Channel</th>
-                            <th>9</th>
-                            <th>10</th>
-                            <th>11</th>
-                            <th>12</th>
-                            <th>13</th>
-                            <th>14</th>
-                            <th>15</th>
+                            <th id="9">9</th>
+                            <th id="10">10</th>
+                            <th id="11">11</th>
+                            <th id="12">12</th>
+                            <th id="13">13</th>
+                            <th id="14">14</th>
+                            <th id="15">15</th>
                         </tr>
                     </thead>
                     <tbody>
