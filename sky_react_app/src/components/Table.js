@@ -50,7 +50,7 @@ export default class Table extends Component {
             return (
                 <tr key={id}>
                     <td> {name}</td>
-                    <td>{title}</td>
+                    <td>{title ? title : "No programmes available"}</td>
                     <td>{startTime}</td>
                     <td>{endTime}</td>
                 </tr>
